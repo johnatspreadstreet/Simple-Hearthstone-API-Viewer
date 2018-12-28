@@ -7,10 +7,62 @@
     <title>Boilerplate</title>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" />
 </head>
 <body>
+    <div class="uk-section">
+        <div class="uk-container">
+            <h1 class="uk-h1 tm-heading-fragment">Hearthstone API Explorer</h1>
+            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">Info</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <button class="uk-button uk-button-primary js-info">Pull</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">Cards</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <button class="uk-button uk-button-primary">Pull</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">Cards by name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <button class="uk-button uk-button-primary">Pull</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">Cards by set</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <button class="uk-button uk-button-default" type="button">Select Expansion</button>
+                        <div uk-dropdown>
+                            <ul class="uk-nav uk-dropdown-nav js-expansion-dropdown">
+                            </ul>
+                        </div>
+                        <button class="uk-button uk-button-primary">Pull</button>
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </div>
+    
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <script src="./scripts/api.js"></script>
+    <script src="./scripts/store.js"></script>
+    <script src="./scripts/display.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
 </html>
